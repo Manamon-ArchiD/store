@@ -9,7 +9,9 @@ const bonusTypeEnum = Type.Enum({
 
 export const gadgetSchema = Type.Object({
     id: Type.String(),
-    price: Type.Number(),
+    name: Type.String(),
+    purchasePrice: Type.Number(),
+    salePrice: Type.Number(),
     bonusType: bonusTypeEnum,
     bonusValue: Type.Number(),
 });
